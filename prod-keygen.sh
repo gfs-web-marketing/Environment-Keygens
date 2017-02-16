@@ -13,7 +13,7 @@ if [ $# -eq 0 ]
 cat <<EOT >> ~/.ssh/config
 Host github.com
   Hostname github.com
-  IdentityFile ~/.ssh/$1+prod-deployment_github-com.key
+  IdentityFile ~/.ssh/$1+prod_github-com.key
   IdentitiesOnly yes
 EOT
 chmod 600 ~/.ssh/config
