@@ -1,6 +1,12 @@
-# Environment Key Generators
+# Environment SSH Key Generators
 
-This set of scripts will allow you to setup your deployment keys for both staging and production environments.
+This set of scripts will allow you to setup your deployment keys for both staging and production environments. It does the following:
+
+- Properly configure ~/.ssh/config for remote Github deployment.
+- Names and sets up SSH keys, the only thing you provide is the repository name.
+- Creates deployment keys for staging and prod environments.
+- In staging, creates both a maintenance and deploy key.
+- Provides further instructions in staging for maintenance user setup.
 
 See [GFS Confluence Documentation](https://confluence.gfs.com/confluence/display/CORPISMARTECH/Connecting+to+source+control) for the full process.
 
