@@ -16,6 +16,7 @@ Host github.com
   IdentityFile ~/.ssh/$1+prod-deployment_github-com.key
   IdentitiesOnly yes
 EOT
+chmod 600 ~/.ssh/config
 
     echo ""
     echo "------------------------------------------"

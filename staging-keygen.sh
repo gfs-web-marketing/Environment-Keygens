@@ -21,6 +21,7 @@ Host github.com-maintenance
   IdentityFile ~/.ssh/$1+maintenance_github-com.key
   IdentitiesOnly yes
 EOT
+chmod 600 ~/.ssh/config
 
     echo ""
     echo "------------------------------------------"
