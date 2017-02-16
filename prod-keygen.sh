@@ -17,4 +17,21 @@ Host github.com
   IdentitiesOnly yes
 EOT
 
+    echo ""
+    echo "------------------------------------------"
+    echo "PROD KEY - FURTHER INSTRUCTIONS:"
+    echo "------------------------------------------"
+    echo "1. Navigate to https://github.com/gfs-maintenance/$1/settings/keys"
+    echo "2. Click 'Add deploy key' at the top right"
+    echo "Enter 'PROD Deployment' in the Title field"
+    echo "4. In the 'Key' field, paste the following public key text from the generated public key file, ~/.ssh/$1+maintenance_github-com.key.pub:"
+    echo ""
+    cat ~/.ssh/$1+prod_github-com.key.pub
+    echo ""
+    echo "5. DO NOT Check the 'Allow write access' checkbox"
+    echo "6. Click 'Add key'"
+    echo "7. The public key is now added to GitHub"
+    echo "------------------------------------------"
+    echo ""
+
 fi
