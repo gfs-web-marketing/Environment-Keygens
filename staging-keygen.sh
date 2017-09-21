@@ -50,6 +50,8 @@ chmod 600 ~/.ssh/config
     echo "6. Click 'Add key'"
     echo "7. The public key is now added to GitHub"
     echo "------------------------------------------"
+    echo "SET UP CODE REPOSITORY:"
+    echo "------------------------------------------"
     echo "If you previously cloned the repository from gfs-web-marketing, add the maintenance remote to your Git repository:"
     echo "git remote add maintenance git@github.com:gfs-maintenance/$1.git"
     echo "------------------------------------------"

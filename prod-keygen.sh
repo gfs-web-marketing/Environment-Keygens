@@ -22,10 +22,10 @@ chmod 600 ~/.ssh/config
     echo "------------------------------------------"
     echo "PROD KEY - FURTHER INSTRUCTIONS:"
     echo "------------------------------------------"
-    echo "1. Navigate to https://github.com/gfs-maintenance/$1/settings/keys"
+    echo "1. Navigate to https://github.com/gfs-web-marketing/$1/settings/keys as a non-maintenance user."
     echo "2. Click 'Add deploy key' at the top right"
     echo "Enter 'PROD Deployment' in the Title field"
-    echo "4. In the 'Key' field, paste the following public key text from the generated public key file, ~/.ssh/$1+maintenance_github-com.key.pub:"
+    echo "4. In the 'Key' field, paste the following public key text from the generated public key file, ~/.ssh/$1+prod_github-com.key.pub:"
     echo ""
     cat ~/.ssh/$1+prod_github-com.key.pub
     echo ""
