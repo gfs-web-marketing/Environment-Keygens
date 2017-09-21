@@ -11,9 +11,9 @@ This set of scripts will allow you to setup your deployment keys for both stagin
 
 ## Usage
 
-Use the `helpers/staging-keygen.sh` file on the staging environment to generate an appropriate key for the maintenance and deployment tasks. Example: `./staging-keygen.sh My-Repo-Name`
+Use the `staging-keygen.sh` file on the staging environment to generate an appropriate key for the maintenance and deployment tasks. Example: `./staging-keygen.sh My-Repo-Name`
 
-Use the `helpers/prod-keygen.sh` file on the production environment to generate an appropriate key for the deployment task. Example: `./prod-keygen.sh My-Repo-Name`
+Use the `prod-keygen.sh` file on the production environment to generate an appropriate key for the deployment task. Example: `./prod-keygen.sh My-Repo-Name`
 
 ## Resources
 
