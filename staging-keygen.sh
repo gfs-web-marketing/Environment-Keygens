@@ -15,6 +15,9 @@ cat <<EOT >> ~/.ssh/config
 Host github.com
   Hostname github.com
   IdentityFile ~/.ssh/$1+sit_github-com.key
+  IdentitiesOnly yes
+Host github.com-maintenance
+  Hostname github.com
   IdentityFile ~/.ssh/$1+maintenance_github-com.key
   IdentitiesOnly yes
 EOT
@@ -52,11 +55,11 @@ chmod 600 ~/.ssh/config
     echo "------------------------------------------"
     echo "SET UP CODE REPOSITORY:"
     echo "------------------------------------------"
-    echo "If you previously cloned the repository from gfs-web-marketing, add the maintenance remote to your Git repository:"
-    echo "git remote add maintenance git@github.com:gfs-maintenance/$1.git"
+    echo "If you previously cloned the repository from gfs-web-marketing, add the maintenance remote to your Git repository (note SSH host here):"
+    echo "git remote add maintenance git@github.com-maintenance:gfs-maintenance/$1.git"
     echo "------------------------------------------"
-    echo "If you have not cloned the repository, fork it as the gfs-maintenance user in the Github UI. Once forked, clone it to this server:"
-    echo "git clone git clone git@github.com:gfs-maintenance/$1.git"
+    echo "If you have not cloned the repository, fork it as the gfs-maintenance user in the Github UI. Once forked, clone it to this server (note SSH host here):"
+    echo "git clone git clone git@github.com-maintenance:gfs-maintenance/$1.git"
     echo "-------------------"
     echo "Then change the remotes to the proper format:"
     echo "git remote rename origin maintenance"
