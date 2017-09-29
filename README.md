@@ -3,10 +3,10 @@
 
 This set of scripts will allow you to setup your deployment keys for both staging and production environments. It does the following:
 
-- Properly configure ~/.ssh/config for remote Github deployment.
+- Properly configure `~/.ssh/config` for remote Github deployment.
 - Names and sets up SSH keys, the only thing you provide is the repository name.
-- Creates deployment keys for staging and prod environments.
-- In staging, creates both a maintenance and deploy key.
+- Creates read only deploy keys for staging and prod environments meant to be used as the gfs-maintenance user.
+- Adds template GITHUB_TOKEN auth to `~/.bash_profile`
 - Provides further instructions in staging for maintenance user setup.
 
 ## Usage
