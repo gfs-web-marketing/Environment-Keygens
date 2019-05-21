@@ -17,6 +17,10 @@ Host github.com
   Hostname github.com
   IdentityFile ~/.ssh/$1+sit_github-com.key
   IdentitiesOnly yes
+Host github.com-maintenance
+  Hostname github.com
+  IdentityFile ~/.ssh/$1+sit_github-com.key
+  IdentitiesOnly yes
 EOT
 chmod 600 ~/.ssh/config
 
@@ -53,7 +57,7 @@ EOT
     echo "git remote add maintenance git@github.com-maintenance:gfs-maintenance/$1.git"
     echo "------------------------------------------"
     echo "If you have not cloned the repository, fork it as the gfs-maintenance user in the Github UI. Once forked, clone it to this server (note SSH host here):"
-    echo "git clone git clone git@github.com-maintenance:gfs-maintenance/$1.git"
+    echo "git clone git@github.com-maintenance:gfs-maintenance/$1.git"
     echo "-------------------"
     echo "Then change the remotes to the proper format:"
     echo "git remote rename origin maintenance"
